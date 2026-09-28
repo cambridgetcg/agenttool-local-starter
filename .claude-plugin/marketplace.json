@@ -1,0 +1,16 @@
+{
+  "name": "agenttool-local-starter-preview",
+  "owner": {
+    "name": "AgentTool contributors"
+  },
+  "plugins": [
+    {
+      "name": "agenttool-local-starter",
+      "source": "./plugins/agenttool-local-starter",
+      "description": "Optional local context, handoffs and memory with explicit setup."
+    }
+  ],
+  "metadata": {
+    "description": "Optional AgentTool local context, handoffs and memory preview."
+  }
+}

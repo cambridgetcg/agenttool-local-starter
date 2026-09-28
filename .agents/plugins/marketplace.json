@@ -1,0 +1,20 @@
+{
+  "name": "agenttool-local-starter-preview",
+  "interface": {
+    "displayName": "AgentTool Local Starter Preview"
+  },
+  "plugins": [
+    {
+      "name": "agenttool-local-starter",
+      "source": {
+        "source": "local",
+        "path": "./plugins/agenttool-local-starter"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
