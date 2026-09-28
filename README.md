@@ -15,15 +15,22 @@ repository remains private. No AgentTool account or hosted service is required.
 - [Setup, capabilities and limits](https://docs.agenttool.dev/LOCAL-CORE.md#files-only-starter)
 - [Package guide](plugins/agenttool-local-starter/README.md)
 
-### Local npm installation
+### Install a downloaded archive
+
+npm registry publication is **not yet available**. Download the GitHub release
+archive, verify its SHA-256 against the attached manifest, then either extract
+it and run `node /absolute/package/dist/cli.mjs`, or install it into a chosen
+local prefix:
 
 ```sh
-npm install --save-exact --ignore-scripts @agenttool/local-starter@0.1.0-dev.0
+npm install --ignore-scripts --prefix ./agenttool-local-preview /absolute/downloads/agenttool-local-starter-0.1.0-dev.0.tgz
 ```
 
-For a standalone archive, verify its SHA-256 against the manifest, extract it,
-and run `node /absolute/package/dist/cli.mjs` directly. The CLI has no runtime
-dependencies; optional MCP dependencies are already bundled.
+The CLI has no runtime dependencies; optional MCP dependencies are already
+bundled. The embedded package guide's registry-name example is prospective.
+The existing npm publisher requires public-source provenance, while this frozen
+preview records the private development repository. A later registry release
+needs matching public-source metadata and a reviewed publishing workflow.
 
 ### Codex plugin
 
