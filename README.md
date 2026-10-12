@@ -3,15 +3,16 @@
 A small place for chosen context, handoffs and memory. Keep ordinary notes in
 an explicit local folder, then choose how your agent reads them.
 
-**Preview:** `@agenttool/local-starter@0.1.0-dev.0` · **Runtime:** Node 22+
+**Preview:** `@agenttool/local-starter@0.1.0-dev.1` · **Runtime:** Node 22+
 
 This public repository distributes reviewed release contents. The development
 repository remains private. No AgentTool account or hosted service is required.
 
 ## Choose an entrance
 
-- [Exact-version manifest and SHA-256](https://docs.agenttool.dev/packages/v1/@agenttool/local-starter/0.1.0-dev.0/manifest.json)
-- [GitHub release and standalone archive](https://github.com/cambridgetcg/agenttool-local-starter/releases/tag/local-starter-v0.1.0-dev.0)
+- [Exact-version manifest and SHA-256](https://docs.agenttool.dev/packages/v1/@agenttool/local-starter/0.1.0-dev.1/manifest.json)
+- [GitHub release and standalone archive](https://github.com/cambridgetcg/agenttool-local-starter/releases/tag/local-starter-v0.1.0-dev.1)
+- [What changed](plugins/agenttool-local-starter/CHANGELOG.md)
 - [Setup, capabilities and limits](https://docs.agenttool.dev/LOCAL-CORE.md#files-only-starter)
 - [Package guide](plugins/agenttool-local-starter/README.md)
 
@@ -23,7 +24,7 @@ it and run `node /absolute/package/dist/cli.mjs`, or install it into a chosen
 local prefix:
 
 ```sh
-npm install --ignore-scripts --prefix ./agenttool-local-preview /absolute/downloads/agenttool-local-starter-0.1.0-dev.0.tgz
+npm install --ignore-scripts --prefix ./agenttool-local-preview /absolute/downloads/agenttool-local-starter-0.1.0-dev.1.tgz
 ```
 
 The CLI has no runtime dependencies; optional MCP dependencies are already
@@ -69,7 +70,14 @@ cloud sync, identity assignment or credential discovery.
 
 ## Release integrity
 
-`release/manifest.json` records the source revision, artifact size and SHA-256.
-`release/SHA256SUMS` covers the attached archive. Files under
-`plugins/agenttool-local-starter` are extracted from that exact artifact.
-The archive includes Apache-2.0 license and bundled third-party notices.
+Each `release/<tag>/` folder belongs to one GitHub release.
+`manifest.json` is the LOVE manifest: source revision, artifact size and
+SHA-256. `SHA256SUMS` covers that release's archive, and `receipt.json`
+(from `0.1.0-dev.1`) records how it was built. Files under
+`plugins/agenttool-local-starter` are extracted from the newest archive,
+`0.1.0-dev.1`. Each archive includes the Apache-2.0 license and bundled
+third-party notices.
+
+`0.1.0-dev.0` stays available, byte for byte, from its own release. Its
+`foundations.md` template lists two optional links; `0.1.0-dev.1` lists
+one. Neither version rewrites an existing notes folder.

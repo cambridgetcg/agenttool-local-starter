@@ -1,0 +1,31 @@
+{
+  "schema": "agenttool.local-starter-distribution/1",
+  "package": {
+    "name": "@agenttool/local-starter",
+    "version": "0.1.0-dev.1",
+    "path": "packages/local-starter"
+  },
+  "tag": "local-starter-v0.1.0-dev.1",
+  "source_revision": "70d7241e93b4f739129637ad61917bc66a032d97",
+  "artifact": {
+    "filename": "agenttool-local-starter-0.1.0-dev.1.tgz",
+    "size": 231625,
+    "sha1": "bea90deea9805d959c2a42ae9ff4ed518d96da4e",
+    "sha256": "e49bf41b72ec546c52ae7987e2086c8dbaa2065e15bec847fd2f7ceb66981f02",
+    "integrity": "sha512-DRnVzSU50q2n2Iap2fwvGGO15UplBmL3PzclekDgw19TcpvOdzcDz8Xso75w5LlOsdLiTl3VsXdu3IL/cO7kqg=="
+  },
+  "love_manifest": {
+    "url": "https://docs.agenttool.dev/packages/v1/@agenttool/local-starter/0.1.0-dev.1/manifest.json",
+    "size": 1398,
+    "sha256": "19ed857372445f9b65d9faabdbf872e6d2cd6c1da18c625e613cd91598480603"
+  },
+  "prepared_with": {
+    "command": "bun bin/build-love-packages.ts build apps/docs",
+    "bun": "1.3.5",
+    "node": "22.18.0",
+    "platform": "darwin-arm64"
+  },
+  "reproduced": "A fresh clone at source_revision rebuilt and packed byte-identical bytes; the same toolchain reproduces 0.1.0-dev.0's published SHA-256.",
+  "npm_registry": "not published; repository metadata names the private source repository",
+  "prepared_at": "2026-10-12T11:22:30.000Z"
+}
